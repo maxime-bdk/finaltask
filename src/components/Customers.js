@@ -106,7 +106,7 @@ const [customer, setCustomer] = useState([]);
     }
 
     const deleteCustomer = (link) => {
-        if (window.confirm('Are you sure?')) {
+        if (window.confirm('R u sure?')) {
          fetch(link, {method: 'DELETE'})
          .then(response => {
             if (!response.ok) {
