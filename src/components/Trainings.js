@@ -96,7 +96,7 @@ function TrainingList() {
       }, []);
     
     const [traincolumns, setTraincolumns] = useState([
-    {field: 'firstname', sortable: true, filter: true, width: '300%', 
+    {field: 'fullname', sortable: true, filter: true, width: '300%', 
     valueFormatter: fullNameTr}, 
     {field: 'date', sortable: true, filter: true, width: '300%', 
     valueFormatter: dateFormatter },
@@ -126,7 +126,7 @@ function TrainingList() {
         return(
 
         <>
-        <Stack sx={{ backgroundColor: "warning.main", borderRadius: 2 }}>
+        <Stack direction="row" spacing={2} sx={{ backgroundColor: "warning.main", borderRadius: 2 }}>
         <Button variant='secondary' color="success" backgroundColor="warning.main" onClick={onBtnExport} style={linkStyle1}>
         Export to CSV
         </Button>
